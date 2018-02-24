@@ -10,4 +10,4 @@ Features
  - AUTO UP
  - DOWNLOAD (Download MP3)
 
-![alt tag](https://imgur.com/a/reMP5)
+![alt tag](https://i.imgur.com/qXyYWBJ.png)
