@@ -31,6 +31,7 @@ function autoupOFF() {
 $('#auto-up').one('click', autoupON);
 $('#meh').one('click', autoupOFF);
 
+$('#auto-up"').trigger('click');
 
 $('#grab').mousedown(function() {
     timeoutId = setTimeout(GrabMP3, 1000);
@@ -39,6 +40,6 @@ $('#grab').mousedown(function() {
 });
 
 function GrabMP3() {
-	window.open('http://youtubeinmp3.com/fetch/?video=http://www.youtube.com/watch?v=' + API.getMedia().cid, '_blank');
+	window.open('https://y2mate.com/youtube-to-mp3/' + API.getMedia().cid, '_blank');
 }
 $('#download').one('click', GrabMP3);
