@@ -31,8 +31,6 @@ function autoupOFF() {
 $('#auto-up').one('click', autoupON);
 $('#meh').one('click', autoupOFF);
 
-$('#auto-up"').trigger('click');
-
 $('#grab').mousedown(function() {
     timeoutId = setTimeout(GrabMP3, 1000);
 }).bind('mouseup mouseleave', function() {
