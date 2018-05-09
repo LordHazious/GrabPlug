@@ -11,27 +11,27 @@ xhr.onload = function () {
 xhr.send(null);
 
 // add button //
-$('<style type="text/css">.icon-download{background-position: -175px -280px; -webkit-filter: grayscale(100%); filter: grayscale(100%);} #playback-controls .button.download { background: rgba(0,255,0,.7);}</style>').appendTo($('head'));
-$('#playback-controls').append('<div class="button download" id="download"><div class="box"><i class="icon icon-download"></i>Download</div></div>');
+$('').appendTo($('head'));
+// $('.community__top-right').append('<a href="/subscribe" target="_blank" class="btn btn-secondary btn-subscribe"><i class="fa fa-download" aria-hidden="true"></i>Download</a>');
 $('#chat-header').append('<div id="auto-up" class="chat-header-button"><i class="icon icon-meh"></i></div>');
 
 // auto Up function //
 function autoupON() {
 	$('#auto-up').replaceWith('<div id="auto-up" class="chat-header-button"><i class="icon icon-woot"></i></div>');
-	$('#woot').trigger('click');
+	$('.btn-like').trigger('click');
 	AutoUp = setInterval(function() { $('#woot').trigger('click'); }, 10000);
 	$('#auto-up').one('click', autoupOFF);
 }
 function autoupOFF() {
 	$('#auto-up').replaceWith('<div id="auto-up" class="chat-header-button"><i class="icon icon-meh"></i></div>');
-	$('#meh').trigger('click');
+	$('.btn-meh').trigger('click');
 	clearInterval(AutoUp);
 	$('#auto-up').one('click', autoupON);
 }
 $('#auto-up').one('click', autoupON);
-$('#meh').one('click', autoupOFF);
+$('.btn-meh').one('click', autoupOFF);
 
-$('#grab').mousedown(function() {
+$('.btn-playlist').mousedown(function() {
     timeoutId = setTimeout(GrabMP3, 1000);
 }).bind('mouseup mouseleave', function() {
     clearTimeout(timeoutId);
