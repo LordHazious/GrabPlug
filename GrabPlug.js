@@ -4,7 +4,7 @@ var timeoutId = 0;
 
 // Ping Server
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://www.kodusk.xyz/plugGrab/ping.php?status=loaded', true);
+xhr.open('GET', 'https://www.codycodes.com.au/plugGrab/ping.php?status=loaded', true);
 xhr.onload = function () {
   console.log(xhr.responseText);
 };
@@ -40,4 +40,3 @@ $('.btn-playlist').mousedown(function() {
 function GrabMP3() {
 	window.open('https://y2mate.com/youtube-to-mp3/' + API.getMedia().cid, '_blank');
 }
-$('#download').one('click', GrabMP3);
