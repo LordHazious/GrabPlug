@@ -1,4 +1,4 @@
-// www.kodusk.xyz //
+// www.codycodes.com.au //
 var AutoUp;
 var timeoutId = 0;
 
